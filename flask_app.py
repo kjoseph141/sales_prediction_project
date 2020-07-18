@@ -10,22 +10,13 @@ import pickle
 
 app = Flask(__name__)
 
-#global NN_model, graph
-#
-#with tf.Session() as sess:
-#     sess.run(tf.global_variables_initializer())
-     
-
-#graph = tf.get_default_graph()
-
-#tf_config = some_custom_config
-sess = tf.Session()#config=tf_config)
+sess = tf.Session()
 graph = tf.get_default_graph()
 
 set_session(sess)
-NN_model = load_model('/Users/kevinjoseph/Python/Sales Prediction Project/NN_full_model_nb.h5')
+#NN_model = load_model('/Users/kevinjoseph/Python/Sales Prediction Project/NN_full_model_nb.h5') Used for local machine
+NN_model = load_model('NN_full_model_nb.h5')
 
-#NN_model.compile(loss='mean_absolute_error', optimizer='adam', metrics=['mean_absolute_error'])
 
 #Load in data
 X_test = pickle.load(open('X_test_nb.pickle','rb'))
