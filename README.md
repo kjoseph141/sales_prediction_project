@@ -31,6 +31,7 @@ List of features ready and TODOs for future development
 
 To-do list:
 * Add more data on additional companies and updated data
+* Update tensorflow model
 
 
 ## Status
