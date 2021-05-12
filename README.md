@@ -14,6 +14,7 @@
 ## General info
 * Predictor for company's upcoming reported sales
 - Motivation: Ability to build and deploy a simple model from data collection, data processing, and model design
+- See Jupyter notebook for all steps taken
 
 
 ## Technologies
